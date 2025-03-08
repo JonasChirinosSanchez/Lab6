@@ -42,19 +42,13 @@ def check_if_winner(board, col, row, chip_type):
     return False
 
 
-# def is_board_full(board, row, col, chip_type):
-#     capacity = row * col
-#     chip_count = 0
-#     for i in range(0, len(board)):
-#         for j in range(0,len(board[i])):
-#             if board[i][j] == chip_type:
-#                 chip_count += 1
-#
-#     if chip_count == capacity:
-#         print("FULL BOARD")
-#         return board
-#
-#     return board
+def is_board_full(board, row, col, chip_type):
+    e = True
+    for row in board:
+        for item in row:
+            if item == "-":
+                e = False
+    return e
 
 
 
