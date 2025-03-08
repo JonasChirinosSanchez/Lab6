@@ -92,4 +92,7 @@ def main():
         board.reverse()
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except:
+        EOFError
