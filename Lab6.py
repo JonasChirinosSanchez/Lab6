@@ -76,8 +76,9 @@ def main():
         if check_if_winner(board, col, row, chip_type) == True:
             print(f"Player {turn} won the game!")
             break
-        # elif is_board_full(board, height, length, chip_type):
-        #     pass
+        elif is_board_full(board, height, length, chip_type):
+            print("Draw. Nobody Wins")
+            break
 
         if turn == 1:
             turn = 2
