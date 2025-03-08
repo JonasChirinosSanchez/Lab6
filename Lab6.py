@@ -77,7 +77,7 @@ def main():
             print(f"Player {turn} won the game!")
             break
         elif is_board_full(board, height, length, chip_type):
-            print("Draw. Nobody Wins")
+            print("Draw. Nobody wins.")
             break
 
         if turn == 1:
